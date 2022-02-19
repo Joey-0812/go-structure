@@ -11,19 +11,19 @@ type Array struct {
 	size int
 }
 
-// 构造函数，传入数组的容量capacity构造Array
+// New 构造函数，传入数组的容量capacity构造Array
 func New(capacity int) *Array {
 	return &Array{
 		data: make([]interface{}, capacity),
 	}
 }
 
-// 获取数组的容量
+// GetCapacity 获取数组的容量
 func (a *Array) GetCapacity() int {
 	return len(a.data)
 }
 
-// 获得数组中的元素个数
+// GetSize 获得数组中的元素个数
 func (a *Array) GetSize() int {
 	return a.size
 }
